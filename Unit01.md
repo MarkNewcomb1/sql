@@ -246,6 +246,8 @@ Select all countries who have more than 156 million people
 
 Select the country wtih the highest gross national product 
 
+`select name, gnp from country where gnp = (select MAX(gnp) from country);`
+
 Select all of the countries and their capitals in one query 
 
 Delete Atlantis from the country table
